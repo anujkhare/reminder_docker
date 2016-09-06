@@ -15,13 +15,13 @@ Uses Twilio to send messages. Can only send messages to *verified numbers*.
 - Install docker, docker-compose
 - create a file ```.env``` exporting the following variables:
 ```
-SECRET_KEY
-REDIS_UR
-DATABASE_URL
-PORT
-twilio_account_sid
-twilio_auth_token
-twilio_phone_number
+export SECRET_KEY=mysecretkey
+export REDIS_URL=redis://
+export DATABASE_URL=postgresql:///
+export PORT=8000
+export twilio_account_sid=foo
+export twilio_auth_token=bar
+export twilio_phone_number=baz
 ```
 - In the root directory, run the following:
 ```
